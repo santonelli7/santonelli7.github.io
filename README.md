@@ -443,6 +443,24 @@ If you have a different question, please ask using [Discussions](https://github.
    made for every `post`, which means every page that uses `layout: post`, including the announcements. To change this behavior, simply add
    `related_posts: false` to the front matter of the page you don't want to display related posts on.
 
+### Installation
+
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first fork the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
+
+```bash
+$ git clone git@github.com:<your-username>/<your-repo-name>.git
+$ cd <your-repo-name>
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+Now, feel free to customize the theme however you like (don't forget to change the name!).
+After you are done, you can deploy it to [GitHub Pages](https://pages.github.com/) by running the deploy script:
+
+```bash
+$ ./bin/deploy
+```
+
 ## Features
 
 ### Publications
