@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: publications
 permalink: /publications/
 title: Publications
 description: <b>*</b> denotes equal contribution.
