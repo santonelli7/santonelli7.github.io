@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/env bash
 
 # Run this script to deploy the app to Github Pages
@@ -115,7 +114,7 @@ git checkout $SRC_BRANCH
 echo "Deployed successfully!"
 
 exit 0
-=======
+
 #!/usr/bin/env sh
 
 # Run this script to deploy the app to Github Pages
@@ -150,8 +149,8 @@ while [[ $# > 0 ]]; do
         --verbose)
         set -x
         ;;
-        --dry-run)
-        DRY_RUN="--dry-run"
+        --no-push)
+        NO_PUSH="--no-push"
         ;;
         *)
         echo "Option $1 is unknown." >&2
@@ -211,7 +210,7 @@ rm -R _site/
 # Push to DEPLOY_BRANCH
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-git push ${DRY_RUN} -f -q origin $DEPLOY_BRANCH
+[[ ${NO_PUSH} ]] || git push -f -q origin $DEPLOY_BRANCH
 
 # Move back to SRC_BRANCH
 git checkout $SRC_BRANCH
@@ -219,4 +218,3 @@ git checkout $SRC_BRANCH
 echo "Deployed successfully!"
 
 exit 0
->>>>>>> efb2489b (Fix baseurl. Add gh-pages deployment script.)
