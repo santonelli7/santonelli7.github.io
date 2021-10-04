@@ -243,7 +243,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-twitter-plugin
-  - jekyll-sitemap
   - jemoji
   - jekyll-figure
 
