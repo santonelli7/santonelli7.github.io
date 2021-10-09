@@ -113,6 +113,8 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 url:  # the base hostname & protocol for your site
 baseurl: /al-folio/ # the subpath of your site, e.g. /blog/
 
+rss_icon: true
+
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
