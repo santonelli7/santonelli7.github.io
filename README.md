@@ -186,6 +186,11 @@ Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.
     + [Core Contributors](#core-contributors)
   * [License](#license)
 
+## Best practices
+
+<img align="center" src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/pagespeed.svg">
+
+
 ## Getting started
 
 Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
