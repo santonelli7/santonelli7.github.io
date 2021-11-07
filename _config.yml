@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Simone
 # middle_name: R.
 last_name: Antonelli
-email: simone dot antonelli97 at gmail dot com
+# email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   I am an MSc student in Computer Science at the Sapienza University of Rome interested in explaining what deep neural networks learn.
 footer_text: >
@@ -102,6 +102,8 @@ instagram_id: # your instagram id
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
+
+rss_icon: false
 
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
