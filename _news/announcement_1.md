@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2021-01-09
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Started the honours programme focused on learning causal mechanisms on point clouds
