@@ -230,6 +230,3 @@ Note that the metric used to evaluate the performances of the model is not the a
 Moreover, since the tasks are multi-class problems, the adopted metric to evaluate the models is the f1-score.
 
 These results are not the same as the ones obtained with a state-of-the-art model, but they are very close, so the proposed model is a good baseline to face the SRL task.
-
-#### Conclusion
-The proposed model is composed of only two stacked bidirectional LSTM. Nevertheless, it can achieve a very good f1-score leveraging the syntactic information provided by the dataset, but mainly a significant improvement is given by the contextual embedding returned by the BERT model. Moreover, for future works, the model can be extended considering the remaining syntactic information in the dataset, like dependency heads and dependency relations.
