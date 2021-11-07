@@ -459,13 +459,6 @@ footer.sticky-bottom {
       margin-bottom: 0;
     }
 
-    .post-tags {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0;
-    }
-
     a {
       color: var(--global-text-color);
       text-decoration: none;
@@ -529,6 +522,11 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
+    }
+
+    .card-title {
+      font-size: x-large;
+      color: $black-color;
     }
   }
 
