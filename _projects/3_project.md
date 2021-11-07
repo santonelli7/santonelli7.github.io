@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: page
 title: project 3
@@ -79,3 +80,5 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+=======
+>>>>>>> e95a61f (General fixes)
