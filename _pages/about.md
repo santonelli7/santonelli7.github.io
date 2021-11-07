@@ -7,7 +7,7 @@ subtitle: <a target="_blank" href="https://www.studiareinformatica.uniroma1.it/m
 profile:
   align: right
   image: prof_pic.jpg
-  image_cicrular: false # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: '[first] [dot] [last] 97 [at] gmail [dot] com'
 
 news: true  # includes a list of news items
