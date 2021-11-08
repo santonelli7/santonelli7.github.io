@@ -9,7 +9,7 @@
       value: Italian, English
 
 - title: Education
-  type: time_table
+  type: table
   contents:
     - title: PhD in Computer Science @ CISPA Helmholtz Center for Information Security
       year: Nov 2022 - Present
@@ -31,8 +31,8 @@
         - '<u>GPA: </u> 27.2/30'
         - Graduated with distinction
 
-- title: Experience
-  type: time_table
+- title: Research Experience
+  type: table
   contents:
     - title: Teaching Assistant @ Universität zu Köln 
       year: SS 2023
