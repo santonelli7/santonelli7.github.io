@@ -508,7 +508,7 @@ Now, feel free to customize the theme however you like (don't forget to change t
 > Note: this approach is only necessary if you would like to build an older or very custom version of al-folio.
 
 First, download the necessary modules and install them into a docker image called `al-folio:Dockerfile` (this command will build an image which is used to run your website afterwards. Note that you only need to do this step once. After you have the image, you no longer need to do this anymore):
-  
+
 
 ```bash
 $ ./bin/docker_build_image.sh  
@@ -940,4 +940,3 @@ The theme is available as open source under the terms of the [MIT License](https
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license).
 Since then, it got a full re-write of the styles and many additional cool features.
-
