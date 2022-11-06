@@ -4,21 +4,6 @@
 
 // Typography
 
-.cv h3 {
-  color: var(--global-theme-color);
-}
-
-.cv .badge {
-  background: var(--global-theme-color);
-}
-
-.cv td {
-  margin-left: 1.5em;
-  overflow: hidden;
-  display: inline-block;
-  white-space: nowrap;
-}
-
 p,
 h1,
 h2,
@@ -192,7 +177,7 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
@@ -377,7 +362,7 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
@@ -421,7 +406,7 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -463,7 +448,7 @@ footer.sticky-bottom {
   padding: 0;
 
   li {
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -472,6 +457,13 @@ footer.sticky-bottom {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
+    }
+
+    .post-tags {
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0;
     }
 
     a {
@@ -538,11 +530,6 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
-
-    .card-title {
-      font-size: x-large;
-      color: $black-color;
-    }
   }
 
   .card-item {
@@ -562,8 +549,8 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: $grey-color-light;
-    border-bottom: 1px solid $grey-color-light;
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -787,10 +774,12 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-// Figure with caption
-figure {
-  p {
-    text-align: center;
+// Extra Markdown style (post Customization)
+.post {
+  .post-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    margin-bottom: 0;
   }
 
   // Extra Markdown style (post Customization)
