@@ -70,11 +70,11 @@ og_image: /assets/img/favicon.svg # The site-wide (default for all links) Open G
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: santonelli7 # your GitHub user name
+github_username: siantonelli # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: santonelli7 # your Twitter handle
+twitter_username: sntonelli # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: santonelli7 # your LinkedIn user name
+linkedin_username: siantonelli # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: V1ECJ8YAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID

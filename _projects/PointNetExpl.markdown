@@ -4,8 +4,8 @@ title: Human-Friendly Interpretation of a 3D Point Clouds Classifier
 description: Implementation of Input Optimization technique to explain the predictions of PointNet classifier.
 img: assets/img/X-pointnet.png
 # category: work
-importance: 1
-source: https://github.com/santonelli7/pointnet-explainability
+importance: 2
+source: https://github.com/siantonelli/pointnet-explainability
 ---
 <style>
 img{

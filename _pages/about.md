@@ -17,7 +17,6 @@ social: false  # includes social icons at the bottom of the page
 
 I am an MSc student in Computer Science at the Sapienza University of Rome.
 
-I am fascinated by `human cognition` and how neural networks try to emulate it. Currently, my research is about `geometric deep learning` and how to employ `explainability` in this area. 
-During my studies, I also did research in the `computer vision` field. In particular, I worked on `object detection` in a `few-shot scenario`.
+My research focuses on trustworthy machine learning with an emphasis on adversarial robustness and explainability for graph neural networks and deep generative models.
 
-I previously received a BSc in Computer Science, still from Sapienza University, by working on the analysis and development of a tool for translating biological models.
+Previously, I received a B.Sc. and a M.Sc. in Computer Science, both from the Sapienza University of Rome, working with the [GLADIA research group](https://gladia.di.uniroma1.it/members) led by [Emanuele Rodolà](https://sites.google.com/site/erodola/), on the interpretability of deep models dealing with geometric data and graph representation learning in a few-shot scenario as well. Additionally, I have experience in the computer vision field.
