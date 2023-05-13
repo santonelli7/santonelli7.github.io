@@ -44,7 +44,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -64,7 +64,7 @@ max_width: 800px
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: /assets/img/favicon.svg # The site-wide (default for all links) Open Graph preview image
+og_image: favicon.svg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -174,8 +174,8 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_limit: # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

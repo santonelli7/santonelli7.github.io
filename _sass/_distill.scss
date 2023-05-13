@@ -22,6 +22,7 @@ d-article d-byline a {
 d-article {
   border-top-color: var(--global-divider-color) !important;
 
+  a,
   p,
   h1,
   h2,
@@ -34,6 +35,7 @@ d-article {
     color: var(--global-text-color) !important;
   }
 
+  a,
   h1,
   h2,
   hr,
@@ -43,12 +45,8 @@ d-article {
     border-bottom-color: var(--global-divider-color) !important;
   }
 
-  a {
-    color: var(--global-theme-color) !important;
-
-    &:hover {
-      color: var(--global-theme-color) !important;
-    }
+  a:hover {
+    border-bottom-color: var(--global-hover-color) !important;
   }
 
   b i {

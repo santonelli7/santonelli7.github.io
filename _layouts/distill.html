@@ -5,6 +5,26 @@
 <head>
   {%- include head.html %}
 
+  <head>
+    {%- include head.html %}
+
+    {% include scripts/jquery.html %}
+    {% include scripts/mathjax.html %}
+    <!-- Distill js -->
+    <script src="{{ '/assets/js/distillpub/template.v2.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/distillpub/transforms.v2.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/distillpub/overrides.js' | relative_url }}"></script>
+    {% if page._styles %}
+    <!-- Page/Post style -->
+    <style type="text/css">
+      {
+          {
+          page._styles
+        }
+      }
+    </style>
+    {%- endif %}
+  </head>
   {% include scripts/jquery.html %}
   {% include scripts/mathjax.html %}
   <!-- Distill js -->
@@ -23,6 +43,8 @@
   {%- endif %}
 </head>
 
+<d-front-matter>
+  <script async type="text/json">{
 <d-front-matter>
   <script async type="text/json">{
       "title": "{{ page.title }}",
@@ -58,68 +80,107 @@
       }
     }</script>
 </d-front-matter>
+</d-front-matter>
 
 <body
   class="{%- if site.navbar_fixed -%}fixed-top-nav{%- endif -%} {%- unless site.footer_fixed -%}sticky-bottom-footer{%- endunless -%}">
 
-  <!-- Header -->
-  {%- include header.html %}
+  <body
+    class="{%- if site.navbar_fixed -%}fixed-top-nav{%- endif -%} {%- unless site.footer_fixed -%}sticky-bottom-footer{%- endunless -%}">
 
-  <!-- Content -->
-  <div class="post distill">
+    <!-- Header -->
+    {%- include header.html %}
+    <!-- Header -->
+    {%- include header.html %}
 
-    <d-title>
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.description }}</p>
-    </d-title>
+    <!-- Content -->
+    <div class="post distill">
+      <!-- Content -->
+      <div class="post distill">
 
-    <d-byline></d-byline>
+        <d-title>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </d-title>
+        <d-title>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </d-title>
 
-    <d-article>
-      {% if page.toc -%}
-      <d-contents>
-        <nav class="l-text figcaption">
-          <h3>Contents</h3>
-          {% for section in page.toc -%}
-          <div><a href="#{{ section.name | slugify }}">{{ section.name }}</a></div>
-          {% if section.subsections -%}
-          <ul>
-            {% for subsection in section.subsections -%}
-            <li><a href="#{{ subsection.name | slugify }}">{{ subsection.name }}</a></li>
-            {% endfor %}
-          </ul>
-          {%- endif -%}
-          {%- endfor %}
-        </nav>
-      </d-contents>
-      {%- endif %}
+        <d-byline></d-byline>
+        <d-byline></d-byline>
 
-      {{ content }}
-    </d-article>
+        <d-article>
+          {% if page.toc -%}
+          <d-contents>
+            <nav class="l-text figcaption">
+              <d-article>
+                {% if page.toc -%}
+                <d-contents>
+                  <nav class="l-text figcaption">
+                    <h3>Contents</h3>
+                    {% for section in page.toc -%}
+                    <div><a href="#{{ section.name | slugify }}">{{ section.name }}</a></div>
+                    {% if section.subsections -%}
+                    <ul>
+                      {% for subsection in section.subsections -%}
+                      <li><a href="#{{ subsection.name | slugify }}">{{ subsection.name }}</a></li>
+                      {% endfor %}
+                    </ul>
+                    {%- endif -%}
+                    {%- endfor %}
+                  </nav>
+                </d-contents>
+                {%- endif %}
+                {% for section in page.toc -%}
+                <div><a href="#{{ section.name | slugify }}">{{ section.name }}</a></div>
+                {% if section.subsections -%}
+                <ul>
+                  {% for subsection in section.subsections -%}
+                  <li><a href="#{{ subsection.name | slugify }}">{{ subsection.name }}</a></li>
+                  {% endfor %}
+                </ul>
+                {%- endif -%}
+                {%- endfor %}
+            </nav>
+          </d-contents>
+          {%- endif %}
 
-    <d-appendix>
-      <d-footnote-list></d-footnote-list>
-      <d-citation-list></d-citation-list>
-    </d-appendix>
+          {{ content }}
+        </d-article>
+        {{ content }}
+        </d-article>
 
-    <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+        <d-appendix>
+          <d-footnote-list></d-footnote-list>
+          <d-citation-list></d-citation-list>
+        </d-appendix>
+        <d-appendix>
+          <d-footnote-list></d-footnote-list>
+          <d-citation-list></d-citation-list>
+        </d-appendix>
 
-    {%- if site.disqus_shortname and page.disqus_comments -%}
-    {% include disqus.html %}
-    {%- endif %}
-    {%- if site.giscus.repo and page.giscus_comments -%}
-    {% include giscus.html %}
-    {%- endif -%}
+        <d-bibliography
+          src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
 
-  </div>
+        {%- if site.disqus_shortname and page.disqus_comments -%}
+        {% include disqus.html %}
+        {%- endif %}
+        {%- if site.giscus.repo and page.giscus_comments -%}
+        {% include giscus.html %}
+        {%- endif -%}
 
-  <!-- Footer -->
-  {%- include footer.html %}
+      </div>
+
+      <!-- Footer -->
+      {%- include footer.html %}
+      <!-- Footer -->
+      {%- include footer.html %}
 
 
-  {% include scripts/bootstrap.html %}
-  {% include scripts/analytics.html %}
-  {% include scripts/progressBar.html %}
-</body>
+      {% include scripts/bootstrap.html %}
+      {% include scripts/analytics.html %}
+      {% include scripts/progressBar.html %}
+  </body>
 
 </html>
