@@ -2,20 +2,28 @@
 layout: about
 title: About
 permalink: /
-# subtitle: <a target="_blank" href="https://www.studiareinformatica.uniroma1.it/master-course-computer-science" title="Master course in Computer Science">Computer Science Department</a> &bull; <a target="_blank" href="https://www.uniroma1.it/en/pagina-strutturale/home" title="Sapienza University of Rome">Sapienza University of Rome</a>
+subtitle: 
 
 profile:
   align: right
   image: simone_antonelli.jpeg
-  image_cicular: false # crops the image to make it circular
-  address:
+  image_circular: false # crops the image to make it circular
+  address: 
+
 news: true  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
+<p style='text-align: justify;'>
+I am a first-year Ph.D. student at the <a href="https://cispa.de/en">CISPA Helmholtz Center for Information Security</a>, advised by <a href="https://abojchevski.github.io">Aleksandar Bojchevski</a>.
+</p> 
 
-I'm a 1st-year Ph.D. student at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en), advised by [Aleksandar Bojchevski](https://abojchevski.github.io/). 
+<p style='text-align: justify;'>
+My research focuses on trustworthy machine learning, specifically exploring the robustness of graph neural networks, differentially private graph learning and generative models.
+</p>
 
-My research focuses on trustworthy machine learning with an emphasis on adversarial robustness and explainability for graph neural networks and deep generative models.
-
-Previously, I received a B.Sc. and a M.Sc. in Computer Science, both from the Sapienza University of Rome, working with the [GLADIA research group](https://gladia.di.uniroma1.it/members) led by [Emanuele Rodolà](https://sites.google.com/site/erodola/), on the interpretability of deep models dealing with geometric data and graph representation learning in a few-shot scenario as well. Additionally, I have experience in the computer vision field.
+<p style='text-align: justify;'>
+I have obtained a B.Ss. and M.Sc. in Computer Science from Sapienza University of Rome where I was awarded as an outstanding student for the a.y. 2020/2021. 
+While away from research, I enjoy doing sports and hiking in nature. For longer breaks, I indulge in travel particularly backpacking.
+</p>

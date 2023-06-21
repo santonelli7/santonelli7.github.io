@@ -4,13 +4,21 @@
     - name: Full Name
       value: Simone Antonelli
     - name: Location
-      value: Rome, Italy
+      value: Cologne, Germany
     - name: Languages
       value: Italian, English
 
 - title: Education
-  type: table
+  type: time_table
   contents:
+    - title: PhD in Computer Science @ CISPA Helmholtz Center for Information Security
+      year: Nov 2022 - Present
+      description:
+        - title: Conducting research on trustworthy machine learning with a focus on graph neural networks (GNNs)
+          contents:
+            - Robustness of GNNs
+            - Differentially Private Graph Learning
+        - Advised by Aleksandar Bojchevski
     - title:  MSc in Computer Science @ Sapienza University of Rome
       year: Dec 2019 - Jan 2022
       description:
@@ -23,9 +31,13 @@
         - '<u>GPA: </u> 27.2/30'
         - Graduated with distinction
 
-- title: Research Experience
+- title: Experience
   type: time_table
   contents:
+    - title: Teaching Assistant @ Universität zu Köln 
+      year: SS 2023
+      description:
+        - Develop homework assignments and in-class exercises and provide guidance through in-class problem-solving sessions
     - title: 'Master thesis development - GLADIA Research Group@Sapienza University of Rome'
       year: 2021
       description:
@@ -42,13 +54,12 @@
 - title: Attended
   type: time_table
   contents:
-    - title: Pre-Doctoral Research School @ Cornell University, Maryland University, Max Planck Institute
-      year: Aug, 2021
-      description: Admitted upon selection
-    - title: Machine Learning Summer School 2021 Tapei @ Max-Planck-Gesellschaft
-      year: Aug, 2021
-      description: Admitted upon selection
-    
+    - title: CMMRS Pre-Doctoral Research School @ Cornell University, Maryland University, Max Planck Institute
+      year: Aug 2021
+      
+    - title: Machine Learning Summer School 2021 Tapei @ Max Plack Institute
+      year: Aug 2021
+
 - title: Skills
   type: list
   contents:

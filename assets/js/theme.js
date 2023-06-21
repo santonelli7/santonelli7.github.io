@@ -9,15 +9,24 @@ let toggleTheme = (theme) => {
 }
 
 
-let setTheme = (theme) =>  {
+let setTheme = (theme) => {
   transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
 
   if (theme) {
     document.documentElement.setAttribute("data-theme", theme);
-  }
-  else {
+
+    // Add class to tables.
+    let tables = document.getElementsByTagName('table');
+    for (let i = 0; i < tables.length; i++) {
+      if (theme == "dark") {
+        tables[i].classList.add('table-dark');
+      } else {
+        tables[i].classList.remove('table-dark');
+      }
+    }
+  } else {
     document.documentElement.removeAttribute("data-theme");
   }
   localStorage.setItem("theme", theme);
@@ -26,7 +35,7 @@ let setTheme = (theme) =>  {
   if (typeof medium_zoom !== 'undefined') {
     medium_zoom.update({
       background: getComputedStyle(document.documentElement)
-          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
+        .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
     })
   }
 };
@@ -72,7 +81,7 @@ let initTheme = (theme) => {
   if (theme == null || theme == 'null') {
     const userPref = window.matchMedia;
     if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
-        theme = 'dark';
+      theme = 'dark';
     }
   }
 
