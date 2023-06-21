@@ -9,7 +9,7 @@
       value: Italian, English
 
 - title: Education
-  type: table
+  type: time_table
   contents:
     - title: PhD in Computer Science @ CISPA Helmholtz Center for Information Security
       year: Nov 2022 - Present
